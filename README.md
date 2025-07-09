@@ -39,7 +39,7 @@ A comprehensive video surveillance system that combines human detection with fac
 
 4.Download the YOLOv8 model weights (will be automatically downloaded on first run if not present)
 
-# Usage
+## Usage
 
 1.Run the application:
   streamlit run video_surveillance_app.py
@@ -88,7 +88,7 @@ smart-surveillance-system/
 └── README.md                      # Project documentation
 ```
 
-#Dataset
+##Dataset
 
 once you run the file using streamlit the face_recof_project will be created automatically and inside that there two sub folder will also created
 -known_faces = To add the person which is known to you can add the person name along with there picture (10-20 or more) directly or can be added using the streamlit dashboard
