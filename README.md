@@ -89,8 +89,8 @@ smart-surveillance-system/
 ```
 
 #Dataset
-```text
+
 once you run the file using streamlit the face_recof_project will be created automatically and inside that there two sub folder will also created
 1.known_faces = To add the person which is known to you can add the person name along with there picture (10-20 or more) directly or can be added using the streamlit dashboard
 2.unknown_faces
-```
+
