@@ -56,7 +56,7 @@ A comprehensive video surveillance system that combines human detection with fac
 
   3.4 Logbook: View and manage detection logs if a unkonwn person detected along with image and timestamp with id the person will logged in the logbook.
 
-#Configuration
+## Configuration
  Key configuration options available in the sidebar:
 
   1.Recognition confidence threshold (0.5-0.9)
