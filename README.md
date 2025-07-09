@@ -59,27 +59,38 @@ A comprehensive video surveillance system that combines human detection with fac
 #Configuration
  Key configuration options available in the sidebar:
 
- ##Recognition confidence threshold (0.5-0.9)
+  1.Recognition confidence threshold (0.5-0.9)
 
-##Processing frame rate
+  2.Processing frame rate
 
-##Tracking parameters
+  3.Tracking parameters
 
 
 #File Structure
 
-
+```text
 smart-surveillance-system/
-├──   video_surveillance_app.py                  # Main application file
-├── requirements.txt                             # Python dependencies
-├── face_recog_project/                          # automatically create once you run the file
-│   ├── known_faces/                             # Directory for registered faces (automatically create once you run the file)
-│   └── unknown_faces/                           # Directory for unrecognized faces (automatically create once you run the file)
-├── face_log.csv                                 # Detection log file (automatically create once you run the file)
-└── README.md                                    # This file
+├── video_surveillance_app.py      # Main Streamlit application
+├── requirements.txt               # Python dependencies
+├── face_recog_project/            # Auto-created on first run
+│   ├── known_faces/               # Database of authorized individuals
+│   │   ├── john_doe/              # Individual's folder (name format: first_last)
+│   │   │   ├── john1.jpg          # 10-20+ images per person
+│   │   │   ├── john2.jpg          # (clear frontal views recommended)
+│   │   │   └── ...                # Supports .jpg, .png formats
+│   │   ├── jane_smith/
+│   │   │   ├── jane1.jpg
+│   │   │   └── ...
+│   │   └── ...                    # Add more individuals as needed
+│   └── unknown_faces/             # Auto-stores unrecognized detections
+│       └── YYYY-MM-DD_HH-MM-SS_ID#.jpg  # Auto-naming format
+├── face_log.csv                   # Timestamped detection records
+└── README.md                      # Project documentation
+```
 
 #Dataset
+```text
 once you run the file using streamlit the face_recof_project will be created automatically and inside that there two sub folder will also created
 1.known_faces = To add the person which is known to you can add the person name along with there picture (10-20 or more) directly or can be added using the streamlit dashboard
 2.unknown_faces
-
+```
