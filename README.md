@@ -66,7 +66,7 @@ A comprehensive video surveillance system that combines human detection with fac
   3.Tracking parameters
 
 
-#File Structure
+## File Structure
 
 ```text
 smart-surveillance-system/
@@ -88,9 +88,8 @@ smart-surveillance-system/
 └── README.md                      # Project documentation
 ```
 
-##Dataset
+## Dataset
 
 once you run the file using streamlit the face_recof_project will be created automatically and inside that there two sub folder will also created
--known_faces = To add the person which is known to you can add the person name along with there picture (10-20 or more) directly or can be added using the streamlit dashboard
--unknown_faces
-
+-**known_faces** = To add the person which is known to you can add the person name along with there picture (10-20 or more) directly or can be added using the streamlit dashboard
+-**unknown_faces** = While detection it Auto-stores unrecognized detections
